@@ -1,24 +1,24 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int fib (int a, int b){
-	int  x = 0, y = 1, auxi, i,n;
-	int fibo;
-	fibo = for (i= 0;i<n;i++){
-		auxi = x+y;
-		x = y;
-		y = auxi;
-		}
-		return(fibo);
-	}
 
+int fibo(int n){
 
+  if((n==1)||(n==0)){
+    return(n);
+  }
+  else{
+    return(fibo(n-1)+fibo(n-2));
+  }
+}
 
-
-void (){
-	
-	
-	
-	
-	
-	}
+int main(){
+  int n, i =0;
+  printf("digite a sequencia fibonacci: \n");
+  scanf("%d",&n);
+  printf("total de voltas \n");
+  while(i<n){
+    printf("%d\n",fibo(i) );
+  }
+  return 0;
+}
